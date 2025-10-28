@@ -18,10 +18,11 @@ pipeline {
             steps {
                 echo '🐍 Creando entorno virtual y preparando dependencias...'
                 sh '''
+                    apt-get update && apt-get install -y python3-venv
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install --upgrade pip
-                    pip install -r requirements.txt || true
+                    pip install -r requirements.txt 
                 '''
             }
         }
