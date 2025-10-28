@@ -1,0 +1,17 @@
+# Ignorar carpetas de compilación de Python
+__pycache__/
+*.py[cod]
+
+# Archivos de entorno virtual
+venv/
+.env/
+
+# Archivos de configuración locales
+*.env
+*.local
+
+# Archivos de logs
+*.log
+
+# Ignorar modelos entrenados
+*.pkl
